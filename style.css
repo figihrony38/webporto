@@ -230,7 +230,7 @@ a img.aligncenter {
 }
 
 .wp-caption {
-    background: #fff;
+    background: #f2f4f7;
     border: 1px solid #f0f0f0;
     max-width: 96%;
     /* Image does not overflow the content area */
@@ -308,13 +308,13 @@ a img.aligncenter {
 }
 
 .navbar-dark .navbar-nav .nav-link{
-	color: #ffffff;
+	color: #4079e4;
 	letter-spacing: 1px;
 	font-size: 14px;
 	position: relative;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-	color: #ffffff;
+	color: hsl(270, 50%, 98%);
 }
 .navbar-dark .navbar-nav .nav-link.active{
 	font-weight: 600;
@@ -323,7 +323,7 @@ a img.aligncenter {
     content: '';
     width: 0;
     height: 3px;
-    background: #ffffff;
+    background: #f5f6f7;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -365,7 +365,7 @@ a img.aligncenter {
     opacity: .6;
 }
 .heading{
-	color: #fff;
+	color: #ffffff;
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
@@ -434,7 +434,7 @@ xclip
   right: 0;
   width: 2px;
   height: 100%;
-  background-color: #aebcb9;
+  background-color: hsl(225, 57%, 97%);
 }
 .cd-headline.clip b {
   opacity: 0;
@@ -629,26 +629,31 @@ xclip
 
 
 
+.right-box-pro {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
+}
 
-.right-box-pro{
-	position: relative;
-	-webkit-box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.3);
+.right-box-pro img {
+    position: relative;
+    z-index: 2;
 }
-.right-box-pro img{
-	position: relative;
-	z-index: 2;
-}
+
 .right-box-pro::before {
     content: "";
     background: url(images/country-quilt-dark.png);
+    background-size: cover; /* Menjamin gambar mengisi area tanpa distorsi */
+    background-position: center; /* Menjaga gambar tetap terpusat */
     width: 100%;
     height: 100%;
     position: absolute;
     bottom: -20px;
     right: -20px;
     z-index: 0;
+    border-radius: 20px; /* Menambahkan border-radius untuk membulatkan sudut */
 }
+
 
 
 
@@ -674,7 +679,7 @@ xclip
 
 
 /*------------------------------------------------------------------
-    PORTFOLIO
+    My Project
 -------------------------------------------------------------------*/
 
 .item-h2,
@@ -803,279 +808,6 @@ xclip
     line-height: 40px;
     text-align: center;
 }
-
-
-/*------------------------------------------------------------------
-    TESTIMONIALS
--------------------------------------------------------------------*/
-
-.logos img {
-    margin: auto;
-    display: block;
-    text-align: center;
-    width: 100%;
-    opacity: 0.3;
-}
-
-.logos img:hover {
-    opacity: 0.5;
-}
-
-.desc h3 i {
-    color: #cccccc;
-    font-size: 37px;
-    vertical-align: middle;
-    margin-right: 12px;
-}
-
-.desc {
-    padding: 30px;
-    position: relative;
-    background: #000;
-    border: 1px solid #111111;
-}
-
-.testi-meta {
-    display: block;
-    margin-top: 20px;
-}
-
-.testimonial h4 {
-    font-size: 18px;
-    color: #333333;
-    padding: 13px 0 0;
-}
-
-.testimonial img {
-    max-width: 55px;
-}
-
-.testimonial small {
-    margin-top: 7px;
-    font-size: 16px;
-    display: block;
-}
-
-.testimonial {
-    background-color: transparent;
-}
-
-.testimonial h3 {
-    padding: 0 0 10px;
-    font-size: 20px;
-    font-weight: 600;
-	color: #ffffff;
-}
-
-.testimonial small,
-.testimonial .lead {
-    background-color: transparent;
-    color: #aaa;
-    display: block;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 30px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.testimonial p:after {
-    display: none;
-}
-
-
-/*------------------------------------------------------------------
-    PRICING TABLES
--------------------------------------------------------------------*/
-
-.pricing-table {
-    margin: 50px 0 0 0;
-    background: #fff;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-}
-
-.pricing-table i {
-    width: 30px;
-    color: #c2c2c2;
-    display: inline-block;
-    margin-right: 10px;
-    padding-right: 5px;
-    border-right: 1px solid #ececec;
-}
-
-.pricing-table .btn-dark {
-    padding: 10px 24px;
-    font-size: 15px;
-}
-
-.pricing-table strong {
-    font-weight: 600;
-    margin-right: 6px;
-    color: #1f1f1f;
-}
-
-.pricing-table-header {
-    padding: 30px 0 25px 0;
-    background: #ffffff;
-}
-
-.pricing-table-header h2 {
-    font-size: 31px;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-}
-
-.pricing-table-header h3 {
-    font-size: 15px;
-    font-weight: 600;
-    color: #aaaaaa;
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-.pricing-table-space {
-    height: 10px;
-}
-
-.pricing-table-text {
-    margin: 15px 30px 0 30px;
-    padding: 0 10px 15px 10px;
-    border-bottom: 1px solid #ececec;
-    font-weight: 300;
-    line-height: 30px;
-    color: #c2c2c2;
-    font-size: 16px;
-}
-
-.pricing-table-text p {
-    font-weight: 400;
-}
-
-.pricing-table-features {
-    margin: 15px 30px 0 30px;
-    padding: 0 10px 15px 30px;
-    border-bottom: 1px solid #ececec;
-    text-align: left;
-    line-height: 30px;
-    font-size: 16px;
-    color: #c2c2c2;
-}
-
-.pricing-table-highlighted h3,
-.pricing-table-highlighted h2 {
-    color: #ffffff !important;
-}
-
-.pricing-table-sign-up {
-    margin-top: 25px;
-    padding-bottom: 30px;
-}
-
-
-/* Highlighted table */
-
-.pricing-table-highlighted {
-    margin-top: 0;
-}
-
-.m130 {
-    margin-top: 130px;
-}
-
-.nav-pills {
-    border: 1px solid #e1e1e1;
-}
-
-.nav-pills > li {
-    width: 50%;
-    padding: 10px;
-    float: left;
-    margin: 0 !important;
-}
-
-.nav-pills > li > a {
-    margin: 0!important;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-
-/*------------------------------------------------------------------
-    ICON BOXES
--------------------------------------------------------------------*/
-
-.icon-wrapper {
-    position: relative;
-    cursor: pointer;
-    display: block;
-    z-index: 1;
-}
-
-.icon-wrapper i {
-    width: 75px;
-    height: 75px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 28px;
-    background-color: #f2f3f5;
-    color: #1f1f1f;
-    margin-top: 0;
-}
-
-.small-icons.icon-wrapper:hover i,
-.small-icons.icon-wrapper:hover i:hover,
-.small-icons.icon-wrapper i {
-    width: auto !important;
-    height: auto !important;
-    line-height: 1 !important;
-    padding: 0 !important;
-    color: #e3e3e3 !important;
-    background-color: transparent !important;
-    background: none !important;
-    margin-right: 10px !important;
-    vertical-align: middle;
-    font-size: 24px !important;
-}
-
-.small-icons.icon-wrapper h3 {
-    font-size: 18px;
-    padding-bottom: 5px;
-}
-
-.small-icons.icon-wrapper p {
-    padding: 0;
-    margin: 0;
-}
-
-.icon-wrapper h3 {
-    font-size: 21px;
-    padding: 0 0 15px;
-    margin: 0;
-}
-
-.icon-wrapper p {
-    margin-bottom: 0;
-    padding-left: 95px;
-}
-
-.icon-wrapper p small {
-    display: block;
-    color: #999;
-    margin-top: 10px;
-    text-transform: none;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.icon-wrapper p small:after {
-    content: "\f105";
-    font-family: FontAwesome;
-    margin-left: 5px;
-    font-size: 11px;
-}
-
 
 /*------------------------------------------------------------------
     MESSAGE BOXES
